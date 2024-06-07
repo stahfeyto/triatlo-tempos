@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Triatlo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <form id="triathlonForm">
+        <h2>Valores de Referência</h2>
+        <label for="referenceSwim">Natação (hh:mm:ss):</label>
+        <input type="text" id="referenceSwim" placeholder="hh:mm:ss" required>
+
+        <label for="referenceBike">Ciclismo (hh:mm:ss):</label>
+        <input type="text" id="referenceBike" placeholder="hh:mm:ss" required>
+
+        <label for="referenceRun">Corrida (hh:mm:ss):</label>
+        <input type="text" id="referenceRun" placeholder="hh:mm:ss" required>
+
+        <div class="input-row">
+            <div class="input-col">
+                <label for="referenceT1">Transição 1 (mm:ss):</label>
+                <input type="text" id="referenceT1" placeholder="mm:ss" required>
+            </div>
+            <div class="input-col">
+                <label for="referenceT2">Transição 2 (mm:ss):</label>
+                <input type="text" id="referenceT2" placeholder="mm:ss" required>
+            </div>
+        </div>
+
+        <h2>Tempos Realizados</h2>
+        <label for="actualSwim">Natação (hh:mm:ss):</label>
+        <input type="text" id="actualSwim" placeholder="hh:mm:ss" required>
+
+        <label for="actualBike">Ciclismo (hh:mm:ss):</label>
+        <input type="text" id="actualBike" placeholder="hh:mm:ss" required>
+
+        <label for="actualRun">Corrida (hh:mm:ss):</label>
+        <input type="text" id="actualRun" placeholder="hh:mm:ss" required>
+
+        <div class="input-row">
+            <div class="input-col">
+                <label for="actualT1">Transição 1 (mm:ss):</label>
+                <input type="text" id="actualT1" placeholder="mm:ss" required>
+            </div>
+            <div class="input-col">
+                <label for="actualT2">Transição 2 (mm:ss):</label>
+                <input type="text" id="actualT2" placeholder="mm:ss" required>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="button" onclick="calculateIntervals()">Calcular</button>
+            <button type="button" onclick="clearForm()">Limpar</button>
+        </div>
+    </form>
+    <div id="results" class="results">
+        <h2>Resultados</h2>
+        <p id="swimResult"></p>
+        <p id="bikeResult"></p>
+        <p id="runResult"></p>
+        <p id="t1Result"></p>
+        <p id="t2Result"></p>
+        <p id="totalResult"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

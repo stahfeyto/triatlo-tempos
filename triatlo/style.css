@@ -1,0 +1,130 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: url("bikef.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid #ddae36;
+    animation: borderGlow 3s infinite;
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: #ddae36;
+        box-shadow: 0 0 5px #ddae36;
+    }
+    50% {
+        border-color: #ffd700;
+        box-shadow: 0 0 15px #ffd700;
+    }
+    100% {
+        border-color: #ddae36;
+        box-shadow: 0 0 5px #ddae36;
+    }
+}
+
+h1, h2 {
+    color: #ddae36;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-col {
+    flex: 0 0 30%;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.input-col {
+    flex: 0 0 65%;
+}
+input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    border: 2px solid #ddae36;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6); /* Cor branca com 50% de transparência */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.button-container button {
+    width: 48%;
+    padding: 8px;
+    background-color: #ddae36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button-container button:hover {
+    background-color: #C69C30;
+}
+
+.button-container button[type="button"]:nth-of-type(2) {
+    background-color: #bdb091;
+}
+
+.button-container button[type="button"]:nth-of-type(2):hover {
+    background-color: #a18f63;
+}
+
+.results {
+    margin-top: 15px;
+}
+
+.results p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #bdb091;
+}
+
+
+label {
+    color: #bdb091;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo horizontalmente à esquerda */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+}
+/* Adicione este estilo ao final do seu arquivo CSS */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-col {
+    flex: 0 0 48%; /* Ajuste conforme necessário */
+}
